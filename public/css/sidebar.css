@@ -1,0 +1,203 @@
+.nav-color{
+    background-color: #fff;
+    box-shadow: -1px 1px 10px -5px black;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-color {
+    background-color: #dadadb;
+    box-shadow: -1px 1px 10px -5px black;
+}
+
+/*New class*/
+.user-info{
+    height: 5rem;
+    border-top: 1px solid #e4e2e2;
+    border-bottom: 1px solid #e4e2e2;
+}
+
+.user-avatar{
+    max-width: 60px;
+    margin: 10px;
+    border: 2px solid #e4e2e2;
+    max-height: 60px;
+}
+
+.user-detail{
+    margin-top: 10px;
+}
+
+.user-name{
+        color: black;
+    font-size: medium;
+}
+
+.user-id{
+        color: black;
+    font-size: small;
+}
+
+.user-type{
+        color: black;
+    font-size: smaller;
+}
+
+#sidebar {
+    min-width: 200px;
+    max-width: 200px;
+    /*max-height: 92vh!important;*/
+}
+
+#sidebar.active {
+    margin-left: -200px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    
+}
+
+/*collaps button nav bar*/
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+/*collaps button*/
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -200px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+/*    background: #fff;
+    color: #fff;
+    transition: all 0.3s;*/
+
+    height: calc(100vh);
+    background: #fff;
+    z-index: 1070;
+    will-change: transform;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+    box-shadow: 0 0.125rem 9.375rem rgba(90,97,105,.1), 0 0.25rem 0.5rem rgba(90,97,105,.12), 0 0.9375rem 1.375rem rgba(90,97,105,.1), 0 0.4375rem 2.1875rem rgba(165,182,201,.1);
+
+}
+
+.btn-warning {
+    color: #212529;
+    border-color: #ffb400;
+    background-color: #ffb400;
+    box-shadow: none;
+}
+
+.btn {
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    border: 1px solid transparent;
+    padding: .5625rem 1rem;
+    font-size: .75rem;
+    line-height: 1.125;
+    border-radius: .25rem;
+    transition: all 250ms cubic-bezier(.27,.01,.38,1.06);
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    background: #fff;
+}
+
+#sidebar ul.components {
+    padding: 0px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1rem;
+    display: block;
+    color: #000;
+    background: #dadadb;
+    margin-top: 10px;
+    white-space: nowrap;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    will-change: background-color,box-shadow,color;
+    transition: box-shadow .2s ease,color .2s ease,background-color .2s ease;
+
+
+}
+#sidebar ul li a:hover {
+    color: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #000;
+    border-right: .5rem solid #18a2b8;
+}
+
+
+li.square {list-style-type: square;}
+
+.submenu-active{
+    color: #18a2b8;
+    background: #ffffff!important;
+    border-right: .5rem solid #18a2b8;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+    color: #9c9faa;
+}
